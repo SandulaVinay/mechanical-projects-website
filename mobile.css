@@ -1,0 +1,92 @@
+/* Mobile-first presentation layer for MechForge */
+html,body{width:100%;max-width:100%;overflow-x:hidden;-webkit-text-size-adjust:100%}
+@media (max-width:767px){
+  body{font-size:15px}
+  .nav{height:64px;padding:0 14px}
+  .brand{font-size:13px;letter-spacing:.09em;gap:8px}
+  .brandMark{width:32px;height:32px;border-radius:9px}
+  .nav nav,.navCta{display:none!important}
+  .mobileMenu{display:block!important;width:42px;height:42px;border:1px solid #ffffff18;border-radius:10px;background:#ffffff08}
+
+  .hero{min-height:calc(100svh - 64px);display:flex;flex-direction:column;justify-content:center;padding:96px 18px 54px;gap:24px;text-align:left}
+  .heroCopy{width:100%;max-width:none}
+  .eyebrow{font-size:9px;letter-spacing:.15em;margin-bottom:14px}
+  .hero h1{font-size:clamp(39px,12vw,56px);line-height:.94;letter-spacing:-.06em}
+  .heroCopy>p{font-size:15px;line-height:1.55;margin:20px 0;max-width:none}
+  .heroActions{display:grid;grid-template-columns:1fr;gap:10px}
+  .heroActions button,.heroActions a{width:100%;min-height:48px}
+  .heroStats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px;font-size:8px}
+  .heroVisual{width:100%;height:285px;margin-top:4px}
+  .blueprint{inset:2% 0 0}
+  .machine{width:330px;height:170px;transform:scale(.72) perspective(900px) rotateX(8deg) rotateY(-8deg)}
+
+  .ticker{padding:12px 0;font-size:9px;letter-spacing:.18em}
+  .section{padding:72px 18px}
+  .sectionIntro{display:block;margin-bottom:32px}
+  .sectionIntro h2{font-size:clamp(38px,11vw,50px);line-height:.95}
+  .sectionIntro>p{font-size:14px;line-height:1.6;margin-top:18px}
+
+  .solarBuild{min-height:1420px;padding:72px 14px}
+  .buildStage{top:78px;width:100%}
+  .buildMeta{font-size:8px;padding:0 4px}
+  .carCanvas{height:330px;overflow:hidden}
+  .ground{left:0;right:0;bottom:42px}
+  .carLayer{transform:translate(-50%,-30%) scale(.52);transform-origin:center center}
+  .buildSteps{grid-template-columns:repeat(4,1fr);gap:5px}
+  .buildSteps div{padding:8px 4px;font-size:7px;min-height:48px}
+  .buildSteps span{font-size:8px;margin-bottom:4px}
+  .buildBottom{display:block;margin:28px 4px 0}
+  .buildBottom>div{margin-bottom:18px}
+  .buildBottom strong{display:block;font-size:24px;margin-top:5px}
+  .buildBottom .primary{width:100%}
+
+  .featuredGrid{grid-template-columns:1fr;gap:14px}
+  .projectArt{height:220px}
+  .projectInfo{display:block;padding:18px}
+  .projectInfo h3{font-size:19px}
+  .projectInfo p{font-size:13px}
+  .chips{justify-content:start;margin-top:13px}
+
+  .library{padding-top:70px}
+  .libraryHead{display:block}
+  .libraryCount{text-align:left;margin-top:18px}
+  .libraryCount b{font-size:34px}
+  .controls{display:block;margin:20px 0 12px}
+  .search{min-height:48px}
+  .filters{display:grid;grid-template-columns:1fr 1fr;margin-top:9px}
+  .filters select{max-width:none;width:100%;min-height:46px}
+  .categoryRail{margin-right:-18px;padding-right:18px;padding-bottom:14px}
+  .categoryRail button{min-height:42px}
+  .projectGrid{grid-template-columns:1fr;gap:13px}
+  .library .projectArt{height:190px}
+
+  .modalBackdrop{padding:12px!important;align-items:flex-end!important}
+  .modal{width:100%!important;max-height:92svh;border-radius:18px 18px 0 0!important}
+  .modalHeader{padding:18px!important}
+  .modalBody{padding:18px!important}
+  .modal h2{font-size:32px!important}
+
+  .processGrid,.whyGrid{grid-template-columns:1fr!important}
+  .processCard,.whyCard{padding:20px!important}
+  .ideaForm{grid-template-columns:1fr!important}
+  .ideaForm .full{grid-column:auto!important}
+  .ideaForm button{width:100%}
+  .contactGrid{grid-template-columns:1fr!important}
+  footer{padding:55px 18px 25px!important}
+
+  input,select,textarea{font-size:16px!important}
+  button,.primary,.ghost{touch-action:manipulation}
+}
+
+@media (min-width:768px) and (max-width:1024px){
+  .nav{padding:0 22px}
+  .nav nav button{padding:10px 7px;font-size:11px}
+  .hero{grid-template-columns:1fr 1fr;padding-inline:35px}
+  .hero h1{font-size:55px}
+  .machine{transform:scale(.78) perspective(900px) rotateX(8deg) rotateY(-8deg)}
+  .projectGrid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+}
